@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="padding: 40px;">
     <a-row :gutter="64">
       <h1 class="text--highlight" style="margin-left: 32px;">Administrador</h1>
       <a-col :span="6">

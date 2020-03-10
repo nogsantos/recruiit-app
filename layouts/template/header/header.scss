@@ -5,4 +5,5 @@
   @extend %z-depth-1;
   z-index: 999;
   background: color('grey', 'lighten-5');
+  padding: 0 32px !important;
 }

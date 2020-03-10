@@ -3,7 +3,7 @@
     <div class="register__container__form">
       <a-row :gutter="8">
         <a-col :span="24">
-          <h1>Bem vindo ao Recruiit</h1>
+          <h1 style="padding-bottom: 0">Bem vindo ao Recruiit</h1>
           <div class="text--limiter">
             Agradecemos seu interesse em trabalhar conosco. Para iniciar sua candidatura, preencha os campos abaixo e ao
             final, nos envie seu currículo no formato <strong>PDF</strong>
