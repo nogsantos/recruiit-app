@@ -38,10 +38,13 @@
             </a-form-item>
             <a-form-item label="Curriculo">
               <a-upload-dragger
+                v-decorator="[
+                  'file',
+                  {
+                    valuePropName: 'file',
+                  },
+                ]"
                 name="file"
-                :multiple="true"
-                action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
-                @change="handleChange"
               >
                 <p class="ant-upload-drag-icon">
                   <a-icon type="inbox" />

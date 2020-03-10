@@ -1,3 +1,5 @@
+import '@nuxtjs/axios'
+
 export default {
   head: {
     title: 'Cadastre-se',
@@ -23,6 +25,24 @@ export default {
         if (!err) {
           // eslint-disable-next-line no-console
           console.log('Received values of form: ', values)
+          const data = {
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            resume: values.file.file.name,
+          }
+
+          this.$axios
+            .post('http://127.0.0.1:8000/api/v1/admin/', data)
+            .then(response => {
+              // eslint-disable-next-line no-console
+              console.log('LOG: handleSubmit -> response', response)
+              this.$router.push({ name: 'email-sent' })
+            })
+            .catch(errors => {
+              // eslint-disable-next-line no-console
+              console.log('LOG: handleSubmit -> errors', errors)
+            })
         }
       })
     },
