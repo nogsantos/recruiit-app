@@ -1,0 +1,29 @@
+@use '../assets/scss/helpers/extensions';
+
+.register {
+  &__container {
+    @extend %container-elements-center;
+
+    &__form {
+      width: 800px;
+
+      input[type='text'],
+      input[type='email'] {
+        height: 4rem;
+        font-size: 2.5rem;
+      }
+
+      button {
+        height: 60px;
+        font-size: 2rem;
+        background-color: #1768b5;
+      }
+
+      .text {
+        &--limiter {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+}

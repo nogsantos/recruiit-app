@@ -1,0 +1,29 @@
+%default-pages {
+  padding: 24px;
+  background: #fff;
+  min-height: 360px;
+}
+
+.layout {
+  min-height: 100vh;
+
+  &-content {
+    margin: 0 16px;
+
+    &-pages {
+      @extend %default-pages;
+
+      background-image: url('/background.svg');
+      background-position: right -400px top;
+      background-repeat: no-repeat;
+    }
+
+    &-public {
+      &-pages {
+        @extend %default-pages;
+
+        background: unset;
+      }
+    }
+  }
+}

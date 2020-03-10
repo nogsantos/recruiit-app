@@ -1,3 +1,3 @@
 <template>
-  <img src="https://res.cloudinary.com/nogsantos/image/upload/v1583341771/recruiit/large_recruiit.png" alt="Recruiit" />
+  <img src="/recruiit.png" alt="Recruiit" width="190" />
 </template>

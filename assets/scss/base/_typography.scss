@@ -1,0 +1,25 @@
+@use '../abstracts/color-variables';
+
+h1 {
+  padding-bottom: 5px;
+  color: color('grey', 'darken-4');
+  border-bottom: 1px solid color('grey', 'lighten-2');
+}
+
+h2 {
+  font-size: 22px;
+  color: color('grey', 'darken-4');
+}
+
+h3 {
+  font-size: 24px;
+  color: color('grey', 'darken-3');
+}
+
+h4 {
+  color: color('grey', 'darken-2');
+}
+
+h5 {
+  color: color('grey', 'darken-1');
+}

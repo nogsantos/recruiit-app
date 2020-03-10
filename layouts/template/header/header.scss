@@ -1,0 +1,8 @@
+@use '../../../assets/scss/abstracts/color-variables';
+@use '../../../assets/scss/helpers/extensions';
+
+.header {
+  @extend %z-depth-1;
+  z-index: 999;
+  background: color('grey', 'lighten-5');
+}

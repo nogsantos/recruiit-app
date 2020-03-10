@@ -1,0 +1,6 @@
+@import '../../../assets/scss/abstracts/color-variables';
+
+.footer {
+  border-top: 1px solid color('grey', 'lighten-2');
+  text-align: center;
+}

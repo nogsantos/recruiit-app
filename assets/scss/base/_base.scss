@@ -1,0 +1,56 @@
+html {
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.text {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+}
+
+.page {
+  &-enter {
+    @extend %page-opacity;
+    &-active {
+      @extend %page-transition;
+    }
+  }
+
+  &-leave {
+    &-active {
+      @extend %page-transition;
+    }
+    &-to {
+      @extend %page-opacity;
+    }
+  }
+}
+
+%page-transition {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+}
+
+%page-opacity {
+  opacity: 0;
+}
