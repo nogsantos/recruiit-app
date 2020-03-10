@@ -13,8 +13,14 @@
   font-size: 18px;
 }
 
-
 .text--highlight {
   color: rgba(0, 0, 0, 0.65);
   font-weight: bold;
+}
+
+.button {
+  &__link {
+    color: rgba(0, 0, 0, 0.65);
+    margin-left: 5px;
+  }
 }
