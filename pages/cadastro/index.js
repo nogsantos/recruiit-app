@@ -24,7 +24,6 @@ export default {
       this.form.validateFieldsAndScroll((err, values) => {
         if (!err) {
           // eslint-disable-next-line no-console
-          console.log('Received values of form: ', values)
           const data = {
             name: values.name,
             email: values.email,

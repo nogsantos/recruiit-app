@@ -7,7 +7,7 @@
         :style="{ fontSize: '120px', color: 'rgb(51, 204, 51)' }"
       />
       <h1 style="display: flex; justify-content: center; margin-top: 15px; font-size: 36px;">
-        EMAIL ENVIADO COM SUCESSO!
+        CADASTRO EFETUADO COM SUCESSO!
       </h1>
     </div>
   </a-row>

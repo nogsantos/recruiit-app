@@ -52,7 +52,7 @@
           <a-icon type="close-circle" :style="{ fontSize: '20px', color: 'rgb(255, 51, 0)' }" /> Reprovado
         </h2>
         <a-card
-          v-for="item in disapproved"
+          v-for="item in reproved"
           :key="item"
           class="card"
           :headStyle="{ 'border-bottom': '1px solid rgb(255, 51, 0)', color: 'rgba(0, 0, 0, 0.65)' }"
@@ -78,7 +78,7 @@
           <a-icon type="warning" :style="{ fontSize: '20px', color: 'rgb(255, 153, 0)' }" /> Quarentena
         </h2>
         <a-card
-          v-for="item in quarentine"
+          v-for="item in quarantine"
           :key="item"
           class="card"
           :headStyle="{ 'border-bottom': '1px solid rgb(255, 153, 0)', color: 'rgba(0, 0, 0, 0.65)' }"
